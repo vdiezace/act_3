@@ -1,0 +1,455 @@
+:root{
+    --theme-color: white;
+    --primary-color: red;
+    --secondary-color: blue;
+    --text-color: black;
+    --memory-color: rgb(7,190,7);
+    --navbar-shallow-color: #e5e5e5;
+    --lottery-background-color: rgb(197, 223, 238);
+
+}
+
+
+body{
+    font-family: 'Heebo', sans-serif;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    padding-top: 80px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Nav bar*/
+
+.topheader{
+    border-bottom: 1.5px solid var(--navbar-shallow-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: var(--theme-color);
+}
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*Logo*/
+.logo{
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 10px;
+}
+
+/*Menu*/
+.menu-container{
+    display: none
+}
+
+.menu-container li{
+    padding: 10px 15px;
+}
+
+.btn{
+    border: 1.5px solid var(--navbar-shallow-color);
+    border-radius: 7px;
+    background: var(--theme-color);
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+/* Primera Sección */
+.oferta{
+    max-width: 1200px;
+}
+
+.oferta-img{
+    max-width: 450px;
+}
+
+.iFhone-img{
+    width: 100%;
+    display: inline-block;
+}
+
+.oferta-memory{
+    position: absolute;
+    top: 110px;
+    left: 60px;
+    background: var(--memory-color);
+    font-size: 12px;
+    color: var(--theme-color);
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.oferta-iFhone{
+    margin-bottom: 25px;
+    margin: 10px;
+}
+
+
+.oferta-p{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.oferta-details{
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 5 auto;
+}
+
+.oferta-comprar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+}
+
+.compra-precio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#comprar-btn{
+    display: flex;
+    background: var(--secondary-color);
+    color: var(--theme-color);
+    border: none;
+    font-size: 20px;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+#comprar-btn:hover{
+    filter: brightness(130%)
+}
+
+.opciones-img{
+    width: 15%;
+}
+
+.opciones-compra{
+    list-style: none;
+    display: flex;
+}
+
+.servicios{
+    max-width: 1200px;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.oferta-servicios{
+    display: flex;
+    width: 50%;
+    padding: 0 auto;
+}
+
+.servicios-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.img-opciones, .servicios-details{
+    width: 100%;
+}
+
+/* Segunda sección */
+
+.recomendados{
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+.recomendados-about{   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.accesorios-recomendados{
+    border: 1.5px solid var(--navbar-shallow-color);
+    border-radius: 7px;
+    gap: 1rem;
+    justify-items: justify;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.recomendados-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.subtitle{
+    padding-left: 10px;
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.recomendados-p{
+    padding-left: 10px;
+    
+}
+
+.btn-recomendado{
+    text-align: center;
+    width: 15%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border: 1px solid;
+    border-radius: 6px;
+    margin-left: 10px;
+    color: var(--theme-color);
+}
+
+#oferta{
+    background: var(--primary-color);
+}
+
+#nuevo{
+    background: var(--secondary-color);
+}
+
+/* Tercera sección*/
+.sorteo{
+    background: var(--lottery-background-color);
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    gap: 1em;
+}
+
+.sorteo p, h2{
+    margin: 0;
+    padding: 0;
+}
+
+.sorteo-title{
+    font-size: 40px;
+    font-weight: 500;
+}
+.sorteo-form{
+    display: grid;
+    gap: 1.5em;
+}
+
+.sorteo-form-group{
+    display: grid;
+    gap: 0.5em;
+}
+
+.sorteo-form input{
+    border-radius: 7px;
+    border: none;
+    height: 50px;
+    padding: 5px 10px;
+}
+
+.sorteo-submit{
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 25%;
+    height: 60px;
+    border-radius: 7px;
+    border: 1.5px solid var(--navbar-shallow-color);
+    background: var(--secondary-color);
+    color: var(--theme-color);
+    cursor: pointer;
+}
+
+.sorteo-submit:hover{
+    box-shadow: 0 0 14px var(--lottery-background-color);
+}
+
+/* Footer*/
+.footer{
+    border-top: 1.5px solid var(--navbar-shallow-color);
+    background-color: var(--theme-color);
+}
+
+.footer-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: 500;
+}
+
+/* Responsive*/
+@media (min-width: 950px){
+
+    /* Nav bar*/
+    .topnav{
+        max-width: 1205px;
+    }
+
+    .menu-container{
+        display: block;    
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* first section */
+    .oferta{
+        display: flex;
+        text-align: justify;
+        justify-content: space-between;
+        max-width: 1250px;
+        margin: 0 40px;
+        align-items: center;
+        margin-left: 180px;
+    }  
+    .oferta-img{
+        max-width: 450px;
+    }
+    
+    .iFhone-img{
+        width: 100%;
+        display: block;
+    }
+
+    .oferta-iFhone{
+        display: flex;
+        padding: 0 10px;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0px;
+    }
+    
+    .oferta-memory{
+        top: 120px;
+        left: 240px;
+    }
+
+    .oferta-p{
+        margin-top: 0;
+    }
+    
+    .oferta-servicios{
+        width: 30%;
+    }
+    
+    .img-opciones, .servicios-details{
+        width: 100%;
+    }
+
+    /* second section */
+    #accesorios{
+        padding-left: 100px;
+    }
+
+    .recomendados-about{   
+        width: 88%;
+        flex-direction: row;
+
+    }
+
+    .subtitle{
+        font-size: 25px;
+    }
+
+    .btn-recomendado{
+        padding: 10px 20px;
+    }
+
+    /* Third section */
+    .sorteo{
+        padding: 30px;
+        margin: 10px auto;
+        max-width: 1130px;
+       }
+    
+    .sorteo-title{
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .sorteo-submit{
+        width: 25%;
+    }
+
+    .sorteo-text{
+        text-align: justify;
+    }
+
+    .sorteo-title{
+        grid-area: title;
+    }
+
+    #p1{
+        grid-area: text1;
+    }
+
+    #p2{
+        grid-area: text2;
+    }
+
+    .sorteo-form{
+        grid-area: form;
+    }
+
+    .sorteo{
+        display: grid;
+        grid: 
+        "title form" auto
+        "text1 form" 
+        "text2 form"/
+        1fr  0.5fr;
+        column-gap: 5em;
+    }
+
+    /* Footer*/
+    .footer{
+        margin-top: 40px;
+    }
+
+    .footer-cont{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1250px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
