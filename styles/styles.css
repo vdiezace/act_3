@@ -87,9 +87,7 @@ a{
 }
 
 .iFhone-img{
-    width: 380px;
-    height: 400px;
-    
+    width: 100%;
 }
 
 .oferta-memory{
@@ -311,15 +309,17 @@ a{
 
 /* Footer*/
 .footer{
+    top:0;
+    left: 0;
     border-top: 1.5px solid var(--navbar-shallow-color);
     background-color: var(--theme-color);
+    max-width: 1024px;
 }
 
 .footer-cont{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1024px;
     margin: 0 auto;
     padding: 10px;
     font-weight: 500;
@@ -327,12 +327,9 @@ a{
 
 /* Responsive*/
 @media (min-width: 950px){
-    .horizontal-pading{
+    .main{
         padding-left: 50px;
         padding-right: 50px;
-    }
-    
-    .vertical-padding{
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -412,7 +409,7 @@ a{
     .sorteo{
         padding: 30px;
         margin: 10px auto;
-        width: 1200px;
+        max-width: 1200px;
        }
     
     .sorteo-title{
@@ -456,14 +453,15 @@ a{
 
     /* Footer*/
     .footer{
-        margin-top: 40px;
+        margin-top: 20px;
+        max-width: 2600px;
     }
 
     .footer-cont{
         margin-left: auto;
         margin-right: auto;
-        max-width: 1250px;
         padding-left: 1rem;
         padding-right: 1rem;
+        width: 100%;
     }
 }
